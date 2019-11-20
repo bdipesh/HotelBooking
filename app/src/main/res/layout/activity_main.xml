@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="6px"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Select Location"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Select Room Type"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/roomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Check In Date"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="YYYY/MM/DD"
+        android:id="@+id/checkInDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Check Out Date"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="YYYY/MM/DD"
+        android:id="@+id/checkOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nadults"
+            android:hint="Adults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nchildren"
+            android:hint="Children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nRooms"
+            android:hint="Rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/calculateBill"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10px"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/billHeading"
+            android:text=""
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/showCheckInDate"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-black"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/showCheckOutDate"
+                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="6px"
+                android:text=""
+                />
+        </GridLayout>
+        <TextView
+            android:id="@+id/showTotalStay"
+            android:text=""
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/showRoomType"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/showUnitPrice"
+            android:text=""
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/showTax"
+            android:text=""
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/showServiceCharge"
+            android:text=""
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/showTotalAmount"
+            android:text=""
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/thankYou"
+            android:text=""
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
